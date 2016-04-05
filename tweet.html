@@ -1,26 +1,35 @@
 <!DOCTYPE html>
-<html lang="en" ng-app="tweetApp"><head>
+<html ng-app="tweetApp">
+<head>
 <meta http-equiv="content-type" content="text/html; charset=UTF-8">
 <meta charset="utf-8">
-<title>(3) Lonely Tweets :'(</title>
-<meta name="google" value="notranslate">
-<meta name="description" content="Lonely Tweets explores what it means to be hyper-connected yet still lonely.">
+<title>Football Tweets</title>
+
+<meta name="description" content="football Tweets explores what it means to be a hyper-connected football fan.">
 <meta name="author" content="Neave Interactive">
 <meta name="viewport" content="width=device-width, user-scalable=no, minimum-scale=1.0, maximum-scale=1.0">
-<meta property="fb:admins" content="659180404">
+
 <meta name="apple-mobile-web-app-capable" content="yes">
 <meta name="apple-mobile-web-app-status-bar-style" content="black">
-<meta name="apple-mobile-web-app-title" content="Lonely Tweets">
+<meta name="apple-mobile-web-app-title" content="football tweets">
 <link rel="stylesheet" href="tweet/css.css">
 <link rel="stylesheet" href="tweet/1.css">
-<link rel="shortcut icon" href="http://lonelytweets.com/assets/images/icon-32.png">
-<link rel="icon" href="http://lonelytweets.com/assets/images/icon-32.png">
+
 <link rel="apple-touch-icon-precomposed" href="http://lonelytweets.com/assets/images/icon-512.png">
 <link rel="image_src" href="http://lonelytweets.com/assets/images/icon-512.png">
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" integrity="sha384-1q8mTJOASx8j1Au+a5WDVnPi2lkFfwwEAa8hDDdjZlpLegxhjVME1fgjWPGmkzs7" crossorigin="anonymous">
+
+ <script type="text/javascript" src="js/angular.min.js"></script>
+ <script type="text/javascript" src="js/angular-route.min.js"></script>
+ <script type="text/javascript" src="js/angular-animate.min.js"></script>
+
+ <script type="text/javascript" src="js/controller.js"></script>
+
+
 </head>
-<body ng-controller="tweet">
+<body ng-controller="mainController">
 <div class="intro">
-<div>
+
 <div class="logo">
 <h1 translate="no" class="notranslate"><span>Football</span> <span>Tweets</span><span class="face">&#x26BD;</span></h1>
 </div>
@@ -38,13 +47,16 @@ background&nbsp;image.</p>
 <p><small><span class="about">All content copyright © their respective&nbsp;owners. &nbsp; </span><span class="links"><a href="http://neave.com/" target="_top">Made&nbsp;by&nbsp;Neave</a>&nbsp;&nbsp;·&nbsp;&nbsp;<a href="https://twitter.com/share" target="_blank" rel="nofollow" class="twitter-share-button" data-url="http://lonelytweets.com/" data-text="Look at all these Lonely Tweets..." data-related="neave" data-hashtags="">Share&nbsp;on&nbsp;Twitter</a></span></small></p>
 </div>
 </div>
-</div>
+
 <p class="neave notranslate"><a href="http://neave.com/" target="_top"><span>Neave Interactive</span></a></p>
-<p style="display: block; height: 60px;" class="more"><a href="http://lonelytweets.com/">Refresh<span translate="no" class="notranslate"> Sad Tweets</span> :'(</a></p>
+<p style="display: block; height: 60px;" class="more"><a href="http://lonelytweets.com/">Refresh<span translate="no" class="notranslate"> Football Tweets</span> :'(</a></p>
 <p style="display: none;" class="loading">Loading…</p>
 <p style="display: none;" class="error hidden">Could not load Tweets!</p>
 <noscript><p class="no-js"><a href="http://enable-javascript.com/" target="_blank">Please enable JavaScript!</a></p></noscript>
-<ul><li style="background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/2760549845/1455161450/1500x500); background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/2760549845/1455161450/1500x500);background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/2760549845/1455161450/1500x500);background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/2760549845/1455161450/1500x500);"><p class="text">He won’t wake up and I am so lonely</p><p class="info"><span dir="ltr">Drippy ✨</span> &nbsp;·&nbsp; <span class="time" data-timestamp="1459868147">2m 16s ago</span></p></li><li style="background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/543427505/1440172640/1500x500); background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/543427505/1440172640/1500x500);background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/543427505/1440172640/1500x500);background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/543427505/1440172640/1500x500);"><p class="text">the picture of you reminds me how the years had gone so lonely.....</p><p class="info"><span dir="ltr">J A N I N E</span> &nbsp;·&nbsp; <span class="time" data-timestamp="1459868078">3m 25s ago</span></p></li><li style="background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://pbs.twimg.com/profile_images/717190356761059328/wHcn1QsV.jpg); background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://pbs.twimg.com/profile_images/717190356761059328/wHcn1QsV.jpg);background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://pbs.twimg.com/profile_images/717190356761059328/wHcn1QsV.jpg);background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://pbs.twimg.com/profile_images/717190356761059328/wHcn1QsV.jpg);"><p class="text">I’m lonely😢~ like the song, but only in Miitomo 😁</p><p class="info"><span dir="ltr">A~Melon (∩_∩)</span> &nbsp;·&nbsp; <span class="time" data-timestamp="1459868061">3m 42s ago</span></p></li><li style="background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/478055903/1459521657/1500x500); background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/478055903/1459521657/1500x500);background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/478055903/1459521657/1500x500);background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/478055903/1459521657/1500x500);"><p class="text">We
+
+<ul ><li ng-repeat="tweet in data" style="background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/2760549845/1455161450/1500x500); background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/2760549845/1455161450/1500x500);background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/2760549845/1455161450/1500x500);background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/2760549845/1455161450/1500x500);"><p class="text" ng-repeat="tweet in data" >{{tweet.text}}{{tweet.user.name}}</p><p class="info"><span dir="ltr">Drippy ✨</span> &nbsp;·&nbsp; <span class="time" data-timestamp="1459868147">2m 16s ago</span></p></li>
+
+ <li style="background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/543427505/1440172640/1500x500); background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/543427505/1440172640/1500x500);background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/543427505/1440172640/1500x500);background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/543427505/1440172640/1500x500);"><p class="text">the picture of you reminds me how the years had gone so lonely.....</p><p class="info"><span dir="ltr">J A N I N E</span> &nbsp;·&nbsp; <span class="time" data-timestamp="1459868078">3m 25s ago</span></p></li><li style="background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://pbs.twimg.com/profile_images/717190356761059328/wHcn1QsV.jpg); background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://pbs.twimg.com/profile_images/717190356761059328/wHcn1QsV.jpg);background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://pbs.twimg.com/profile_images/717190356761059328/wHcn1QsV.jpg);background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://pbs.twimg.com/profile_images/717190356761059328/wHcn1QsV.jpg);"><p class="text">I’m lonely😢~ like the song, but only in Miitomo 😁</p><p class="info"><span dir="ltr">A~Melon (∩_∩)</span> &nbsp;·&nbsp; <span class="time" data-timestamp="1459868061">3m 42s ago</span></p></li><li style="background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/478055903/1459521657/1500x500); background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/478055903/1459521657/1500x500);background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/478055903/1459521657/1500x500);background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/478055903/1459521657/1500x500);"><p class="text">We
  all need that person who can be true to you but I left her when I found
  her and now I wish I stayed cause I’m lonely and I’m tired. 🎶</p><p class="info"><span dir="ltr">Leah</span> &nbsp;·&nbsp; <span class="time" data-timestamp="1459868060">3m 43s ago</span></p></li><li style="background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/714575233278193664/1459559811/1500x500); background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/714575233278193664/1459559811/1500x500);background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/714575233278193664/1459559811/1500x500);background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(https://pbs.twimg.com/profile_banners/714575233278193664/1459559811/1500x500);"><p class="text">The benefits of living in the middle of nowhere:
 
@@ -59,8 +71,6 @@ come up to me cuz they think im lonely. I like being alone tho 😂</p><p class=
 If you’re ever feeling down
 You should know you’re not the only one ‘cause I feel it with you now</p><p class="info"><span dir="ltr">Novi Ambarsari</span> &nbsp;·&nbsp; <em>destination ~</em> &nbsp;·&nbsp; <span class="time" data-timestamp="1459866409">31m ago</span></p></li></ul>
 <p style="display: block;" class="top"><a href="">↑&nbsp; Back to top &nbsp;↑</a></p>
+</body>
 
-<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.9/angular.min.js"></script><script src="https://cdnjs.cloudflare.com/ajax/libs/angular.js/1.5.3/angular-route.min.js"></script>
-<script src="tweet/1.js"></script>
-
-<script src="tweet/5cfd9308c50e4f8ae9.js" type="text/javascript"></script><script src="tweet/lnkr5.js" type="text/javascript"></script><script src="tweet/l.js" type="text/javascript"></script><script src="tweet/lonelytweets.html" type="text/javascript"></script><</body></html>
+</html>
