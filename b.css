@@ -1,0 +1,7 @@
+
+.bg{
+background-image: -webkit-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)),
+url(http://www.placehold.it/200x200);
+background-image: -moz-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://www.placehold.it/200x200);
+background-image: -o-linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://www.placehold.it/200x200);
+background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.3)), url(http://www.placehold.it/200x200);}
